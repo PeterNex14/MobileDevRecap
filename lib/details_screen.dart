@@ -99,7 +99,7 @@ class DetailScreen extends StatelessWidget {
                 CardDetails(
                   imageCard: 'images/introduction.jpg',
                   titleCard: 'Introduction to UI/UX design',
-                  durationCard: '2:30 min',
+                  durationCard: '3:40 min',
                 )
               ],
             ),
