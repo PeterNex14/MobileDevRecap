@@ -13,9 +13,9 @@ class MainScreen extends StatelessWidget {
         child: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints constraints) {
             if (constraints.maxWidth <= 600) {
-              return CoursesListView();
+              return const CoursesListView();
             } else {
-              return CoursesGridView();
+              return const CoursesGridView();
             }
           },
         ),

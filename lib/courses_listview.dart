@@ -86,29 +86,29 @@ class _CoursesListViewState extends State<CoursesListView> {
                                 ClipRRect(
                                     borderRadius: BorderRadius.circular(15),
                                     child: Image.asset(course.imageAsset)),
-                                SizedBox(
+                                const SizedBox(
                                   height: 10,
                                 ),
                                 Text(
                                   course.categoryCourse,
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       color: Color(0xFF4682FC),
                                       fontWeight: FontWeight.bold),
                                 ),
-                                SizedBox(height: 5),
+                                const SizedBox(height: 5),
                                 SizedBox(
                                   width: 280,
                                   child: Text(
                                     course.titleCourse,
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 25),
                                   ),
                                 ),
-                                SizedBox(height: 5),
+                                const SizedBox(height: 5),
                                 Text(
                                   course.reviewCourse,
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       fontSize: 15,
                                       fontWeight: FontWeight.bold,
                                       color: Colors.grey),
@@ -130,7 +130,7 @@ class _CoursesListViewState extends State<CoursesListView> {
 
 
 class CoursesGridView extends StatefulWidget {
-  const CoursesGridView({Key? key}) : super(key: key);
+  const CoursesGridView({super.key});
 
   @override
   State<CoursesGridView> createState() => _CoursesGridViewState();
@@ -174,7 +174,7 @@ class _CoursesGridViewState extends State<CoursesGridView> {
           decoration: InputDecoration(
             filled: true,
             fillColor: Colors.white,
-            prefixIcon: Icon(Icons.search),
+            prefixIcon: const Icon(Icons.search),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
               borderSide: BorderSide.none,
@@ -223,7 +223,7 @@ class _CoursesGridViewState extends State<CoursesGridView> {
                           SizedBox(height: screenSize.width < 600 ? 8 : 10),
                           Text(
                             course.categoryCourse,
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Color(0xFF4682FC),
                               fontWeight: FontWeight.bold,
                             ),

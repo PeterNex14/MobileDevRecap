@@ -12,6 +12,6 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         theme: ThemeData(scaffoldBackgroundColor: const Color(0xFFF5F6F8)),
-        home: MainScreen());
+        home: const MainScreen());
   }
 }

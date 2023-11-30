@@ -28,7 +28,7 @@ class CardDetails extends StatelessWidget {
                 ClipRRect(
                     borderRadius: BorderRadius.circular(15),
                     child: Image.asset(imageCard)),
-                SizedBox(width: 15),
+                const SizedBox(width: 15),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 3.0),
                   child: Column(
@@ -38,16 +38,16 @@ class CardDetails extends StatelessWidget {
                         width: 200,
                         child: Text(
                           titleCard,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
                           ),
                         ),
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       Text(
                         durationCard,
-                        style: TextStyle(fontSize: 18),
+                        style: const TextStyle(fontSize: 18),
                       )
                     ],
                   ),

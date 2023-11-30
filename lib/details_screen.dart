@@ -12,14 +12,14 @@ class DetailScreen extends StatelessWidget {
     const backgroundIcon = Color(0xFFDDDDDD);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Details'),
+        title: const Text('Details'),
         centerTitle: true,
-        titleTextStyle: TextStyle(
+        titleTextStyle: const TextStyle(
             color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
         backgroundColor: Colors.white,
         elevation: 0,
         leading: GestureDetector(
-          child: Icon(
+          child: const Icon(
             Icons.arrow_back,
             color: Colors.black,
           ),
@@ -42,29 +42,29 @@ class DetailScreen extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 15),
                   child: Text(
                     course.categoryCourse,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: Colors.blue, fontWeight: FontWeight.bold),
                   ),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 SizedBox(
                   width: 310,
                   child: Text(
                     course.titleCourse,
-                    style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Text(
                   course.reviewCourse,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.bold,
                       color: Colors.grey),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Row(
                   children: [
                     IndicatorWidget(
@@ -81,25 +81,25 @@ class DetailScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 const ReadMoreX(
                   'This is a course specifically designed for beginners, providing the basic knowledge and creative design skills needed to understand the core principles of design, including color theory, typography, layout, and composition. Gain proficiency in popular design tools like Adobe Photoshop, Illustrator, or Canva, learning how to navigate and create basic designs.',
                   readMoreColor: Colors.blue,
                   fontWeightLabel: FontWeight.normal,
-                  textStyle: const TextStyle(fontSize: 16),
+                  textStyle: TextStyle(fontSize: 16),
                 ),
-                SizedBox(height: 20),
-                Text(
+                const SizedBox(height: 20),
+                const Text(
                   'The lesson',
                   style: TextStyle(
                     fontSize: 23,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                CardDetails(
+                const CardDetails(
                   imageCard: 'images/introduction.jpg',
                   titleCard: 'Introduction to UI/UX design',
-                  durationCard: '3:40 min',
+                  durationCard: '3:4q0 min',
                 )
               ],
             ),
@@ -141,7 +141,7 @@ class IndicatorWidget extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             width: 5,
           ),
           Padding(
@@ -151,12 +151,12 @@ class IndicatorWidget extends StatelessWidget {
               children: [
                 Text(
                   indicatorTitle,
-                  style: TextStyle(fontSize: 17, color: Colors.grey),
+                  style: const TextStyle(fontSize: 17, color: Colors.grey),
                 ),
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                 Text(
                   indicatorSubTitle,
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                 ),
               ],
             ),
